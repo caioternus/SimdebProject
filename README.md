@@ -3,3 +3,4 @@
 - This simulator aims to reproduce the measurement of the blood flow (also known as "cardiac output") performed through the pulmonary artery catheter (also known as "Swan-Ganz catheter" or the acronym "PAC") to support medical/clinical training (e.g. nurses, healthcare teams, medical students, catheterization and surgery students, cardiology apprentices, medical education in overall);
 - The software prototypes were developed in C++ and Assembly languages;
 - Published article in a scientific journal: de Abreu, C.F.T., de Abreu, B.T. The Concept and Building of a Simulation Device to Check the Cardiac Output Measurement Through the Pulmonary Artery Catheter. Biomedical Materials & Devices 2, 968–1001 (2024). https://doi.org/10.1007/s44174-023-00130-8
+- Project galery: https://www.flickr.com/photos/151496653@N08/
