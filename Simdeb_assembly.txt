@@ -27,8 +27,8 @@ void manda_temperatura (unsigned char tx)       // function for transmitting the
 {
    while(TRMT==0){};
    
-        // The TRMT bit is used to see whether the buffer is being used or not. 1 (free) or 0 (busy).
-        // This loop is used to wait until the buffer is free, i.e. TRMT=1
+        // the TRMT bit is used to see whether the buffer is being used or not. 1 (free) or 0 (busy).
+        // this loop is used to wait until the buffer is free, i.e. TRMT=1
 
    TXREG=tx;
 }
@@ -36,13 +36,13 @@ void manda_temperatura (unsigned char tx)       // function for transmitting the
 void config(void)                               // general configuration
 {
    // Input/Output pin configuration
-    ANSEL=0b00010000;                           // Enables analog input an4
+    ANSEL=0b00010000;                           // enables analog input an4
     ANSELH=0;
     TRISA=0;
     TRISB=0;
-    TRISC=0b00010001;         // Pins 16 and 6 are inputs initially (sensor and p1b, respectivelly)  
+    TRISC=0b00010001;         // pins 16 and 6 are inputs initially (sensor and p1b, respectivelly)  
 
-                              // Configuring the serial port to 9600 bps (bits per second)
+                              // configuring the serial port to 9600 bps (bits per second)
     BRGH=1;
     BRG16=0;
     SYNC=0;                   // configure asynchronous serial transmissions
@@ -59,7 +59,7 @@ void config(void)                               // general configuration
     RX9=0;                    // disables 9-bit mode
     CREN=1;                   // enables serial reception
 
-                              // Analog-to-digital converter
+                              // analog-to-digital converter
     ADCON0=0b00010001;        // left justification, Vdd reference, analog channel an4 (pin 16), godone=0
     //ADCON1=0b00010000;      // Fosc/8
     //ADIE=1;
@@ -70,27 +70,27 @@ void config(void)                               // general configuration
     PEIE=1;
 	TMR1IE=0;
 
-                             // PWM, Fpwm= 10KHZ, Fosc=4MHz
+                             // pulse width modulation setup, Fpwm= 10KHZ, Fosc=4MHz
     PR2=99;
     CCP1CON=0b10001100;
     T2CON=0b00000100;        // PostS 1:1, PS 1:1
-    CCPR1L=0;                // CCPR1L vai de 0 até 99 (PR2), pwm de 8 bits
+    CCPR1L=0;                // CCPR1L goes from 0 to 99 (PR2), 8-bit pwm
     
-                             // limpa flags
+                             // clear flags
     LED_yellow=0;
 	fan=0;
   	LED_red=0;
   	aux=0;
 }
 
-void converte (void)         // valor recebe adc
+void converte (void)         // valor receives adc
 {
      GODONE=1;
      while(GODONE);
      valor=ADRESH;
 }
 
-void altera (void)           // função que inverte polaridade do peltier para diminuir temperatura
+void altera (void)          // function that inverts the polarity of the peltier device to reduce temperature
 {    
      TRISC5=1;
      __delay_us(5);
