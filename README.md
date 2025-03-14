@@ -1,4 +1,4 @@
-- This project's name is an acronym for cardiac output simulator in Portuguese ("simulador de débito cardíaco");
+- The name of this project is an acronym for cardiac output simulator in Portuguese ("simulador de débito cardíaco");
 - This repository on GitHub is a folder to store files, code and revision history for a project developed by the author (CFT de Abreu, @caioternus). Other images and content can be found on Flickr, Springer Nature and ResearchGate as well;
 - This project system gathers software and hardware prototypes that work together. There is a graphical user interface (GUI) for the end user to manage and view the progress of the simulation. It was developed using C++ language;
 - This simulator aims to reproduce the measurement of the blood flow (also known as "cardiac output") performed through the pulmonary artery catheter (also known as "Swan-Ganz catheter" or the acronym "PAC") to support medical/clinical training (e.g. nurses, healthcare teams, medical students, catheterization and surgery students, cardiology apprentices, medical education in overall);
