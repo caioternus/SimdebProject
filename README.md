@@ -1,4 +1,5 @@
-- This "CardiacOutputSimulator" repository on GitHub is a folder to store files, code and revision history for a project developed by the author (CFT de Abreu, @caioternus);
+- Simdeb is an acronym for Cardiac Output Simulator in Portuguese ("Simulador de débito cardíaco");
+- This cardiac output simulator repository on GitHub is a folder to store files, code and revision history for a project developed by the author (CFT de Abreu, @caioternus). Other images and content can be found on Flickr, Springer Nature and ResearchGate as well;
 - This project system gathers software and hardware prototypes that work together. There is a graphical user interface (GUI) for the end user to manage and view the progress of the simulation;
 - This simulator aims to reproduce the measurement of the blood flow (also known as "cardiac output") performed through the pulmonary artery catheter (also known as "Swan-Ganz catheter" or the acronym "PAC") to support medical/clinical training (e.g. nurses, healthcare teams, medical students, catheterization and surgery students, cardiology apprentices, medical education in overall);
 - The software prototypes were developed in C++ and Assembly languages;
