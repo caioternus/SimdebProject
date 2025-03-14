@@ -65,7 +65,7 @@ void config(void)                               // general configuration
     //ADIE=1;
     //ADIF=0;
 
-                              // Interruptions
+                              // interruptions
     GIE=1;
     PEIE=1;
 	TMR1IE=0;
@@ -73,8 +73,8 @@ void config(void)                               // general configuration
                              // pulse width modulation setup, Fpwm= 10KHZ, Fosc=4MHz
     PR2=99;
     CCP1CON=0b10001100;
-    T2CON=0b00000100;        // PostS 1:1, PS 1:1
-    CCPR1L=0;                // CCPR1L goes from 0 to 99 (PR2), 8-bit pwm
+    T2CON=0b00000100;        // setup for microcontroller postscaler 1:1, PS 1:1
+    CCPR1L=0;                // CCPR1L register goes from 0 to 99 (PR2) for 8-bit pwm
     
                              // clear flags
     LED_yellow=0;
@@ -97,7 +97,9 @@ void altera (void)          // function that inverts the polarity of the peltier
      TRISC4=0;
 }
 
-void retorna (void)          // função que monitora temperatura e desinverte a polaridade do peltier quando temperatura for 36.5
+void retorna (void)
+
+          // function that monitors temperature and inverts the peltier polarity when the temperature is 36.5 °C
 {
      while(valor<112)
 	{
@@ -108,7 +110,7 @@ void retorna (void)          // função que monitora temperatura e desinverte a
      __delay_us(5);
      TRISC5=0;
 }     
-/*void referencia (void)     // função para referenciar capacitor de bootstrap do transistor superior
+/*void referencia (void)     // function to reference bootstrap capacitor of upper transistor in the h-bridge circuit
 {
 if (TRISC4==1){
 	TRISC5=0;
@@ -119,7 +121,7 @@ if (TRISC5==1){
 }
 
 }*/
-void controle_estabiliza (void)     // função para estabilizar temperatura em set-point
+void controle_estabiliza (void)          // function to stabilize temperature at set-point
 {
 	converte();
 //	manda_temperatura(valor);
@@ -150,7 +152,7 @@ void controle_estabiliza (void)     // função para estabilizar temperatura em 
 	}
 }	
 
-void main(void)                        // main program
+void main(void)                             // main program
 {
   	config();
   	// if (aux==140) set_point=aux;
@@ -159,9 +161,9 @@ void main(void)                        // main program
   	LED_yellow=1;
 	fan=1;
   	LED_red=0;
-   	// while(aux!=127);      // aux is the start of the simulation, a variable sent from desktop GUI
+   	// while(aux!=127);                // aux is used to start of the simulation, a variable sent from desktop GUI
    	
-	/* for(int g=0;g<=133;g++)          // fica estabilizando por 10s
+	/* for(int g=0;g<=133;g++)         // loop to stabilize the temperature for 10 seconds
 	{
 		controle_estabiliza();   		
 		__delay_ms(100);
