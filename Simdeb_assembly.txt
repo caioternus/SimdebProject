@@ -2,7 +2,7 @@
 #include <htc.h>
 #include <stdio.h>
 
-__CONFIG (WDTDIS & MCLRDIS & INTIO & PWRTEN);       // general configuration
+__CONFIG (WDTDIS & MCLRDIS & INTIO & PWRTEN);       // general configuration for Microchip PIC15F690
 
 #ifndef _XTAL_FREQ
 #define _XTAL_FREQ 4000000
