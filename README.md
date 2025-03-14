@@ -1,1 +1,4 @@
-# caioternus
+- This "CardiacOutputSimulator" repository on GitHub is a folder to store files, code and revision history for a project developed by the author (CFT de Abreu, @caioternus);
+- This project system gathers software and hardware prototypes that work together. There is a graphical user interface (GUI) for the end user to manage and view the progress of the simulation;
+- This simulator aims to reproduce the measurement of blood flow performed through the pulmonary artery catheter (Swan-Ganz catheter);
+- The software prototypes were developed in C++ and Assembly languages.
