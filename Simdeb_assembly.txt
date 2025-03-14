@@ -55,17 +55,17 @@ void config(void)                               // general configuration
     TX9D=0;                   // transmits 8 bits of data
 
     RCIE=1;                   // enables reception interruption
-    PEIE=1;                   // habilita a interrupção periférica
-    RX9=0;                    // desabilita modo 9 bits
-    CREN=1;                   // habilita a recepção serial
+    PEIE=1;                   // enables peripheral interrupt
+    RX9=0;                    // disables 9-bit mode
+    CREN=1;                   // enables serial reception
 
-                              // Conversor AD
-    ADCON0=0b00010001;        // justificação à esquerda, referência de Vdd, canal analógico an4 (pino 16), godone=0
+                              // Analog-to-digital converter
+    ADCON0=0b00010001;        // left justification, Vdd reference, analog channel an4 (pin 16), godone=0
     //ADCON1=0b00010000;      // Fosc/8
     //ADIE=1;
     //ADIF=0;
 
-                              // Interrupções
+                              // Interruptions
     GIE=1;
     PEIE=1;
 	TMR1IE=0;
