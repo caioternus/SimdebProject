@@ -23,12 +23,12 @@ void interrupt recepcao(void)
    }
 }
 
-void manda_temperatura (unsigned char tx)       // funÁ„o de transmiss„o do valor de adc pela porta serial
+void manda_temperatura (unsigned char tx)       // function for transmitting the adc value through serial port
 {
    while(TRMT==0){};
    
-        // O bit TRMT serve para ver se o buffer est· sendo utilizado ou n„o. 1(livre) ou 0(ocupado).
-        // Este laÁo de repetiÁ„o serve para esperar atÈ o buffer estar livre, ou seja, TRMT=1
+        // O bit TRMT serve para ver se o buffer est√° sendo utilizado ou n√£o. 1(livre) ou 0(ocupado).
+        // Este la√ßo de repeti√ß√£o serve para esperar at√© o buffer estar livre, ou seja, TRMT=1
 
    TXREG=tx;
 }
@@ -45,27 +45,27 @@ void config(void)                               // general configuration
                               // Configurando a porta serial para 9600 bps (bits per second)
     BRGH=1;
     BRG16=0;
-    SYNC=0;                   // configura  transmissıes seriais assÌncronas
+    SYNC=0;                   // configura  transmiss√µes seriais ass√≠ncronas
     SPBRGH=0;
     SPBRG=25;
     SPEN=1;                   // habilita porta serial
-    TXEN=1;                   // habilita a transmiss„o serial
-    TXIE=0;                   // desabilita a interrupÁ„o por transmiss„o
-    TX9=0;                    // habilita a transmiss„o de 8 bits
+    TXEN=1;                   // habilita a transmiss√£o serial
+    TXIE=0;                   // desabilita a interrup√ß√£o por transmiss√£o
+    TX9=0;                    // habilita a transmiss√£o de 8 bits
     TX9D=0;                   // transmite 8 bits de dados
 
-    RCIE=1;                   // habilita a interrupÁ„o por recepÁ„o
-    PEIE=1;                   // habilita a interrupÁ„o perifÈrica
+    RCIE=1;                   // habilita a interrup√ß√£o por recep√ß√£o
+    PEIE=1;                   // habilita a interrup√ß√£o perif√©rica
     RX9=0;                    // desabilita modo 9 bits
-    CREN=1;                   // habilita a recepÁ„o serial
+    CREN=1;                   // habilita a recep√ß√£o serial
 
                               // Conversor AD
-    ADCON0=0b00010001;        // justificaÁ„o ‡ esquerda, referÍncia de Vdd, canal analÛgico an4 (pino 16), godone=0
+    ADCON0=0b00010001;        // justifica√ß√£o √† esquerda, refer√™ncia de Vdd, canal anal√≥gico an4 (pino 16), godone=0
     //ADCON1=0b00010000;      // Fosc/8
     //ADIE=1;
     //ADIF=0;
 
-                              // InterrupÁıes
+                              // Interrup√ß√µes
     GIE=1;
     PEIE=1;
 	TMR1IE=0;
@@ -74,7 +74,7 @@ void config(void)                               // general configuration
     PR2=99;
     CCP1CON=0b10001100;
     T2CON=0b00000100;        // PostS 1:1, PS 1:1
-    CCPR1L=0;                // CCPR1L vai de 0 atÈ 99 (PR2), pwm de 8 bits
+    CCPR1L=0;                // CCPR1L vai de 0 at√© 99 (PR2), pwm de 8 bits
     
                              // limpa flags
     LED_yellow=0;
@@ -90,14 +90,14 @@ void converte (void)         // valor recebe adc
      valor=ADRESH;
 }
 
-void altera (void)           // funÁ„o que inverte polaridade do peltier para diminuir temperatura
+void altera (void)           // fun√ß√£o que inverte polaridade do peltier para diminuir temperatura
 {    
      TRISC5=1;
      __delay_us(5);
      TRISC4=0;
 }
 
-void retorna (void)          // funÁ„o que monitora temperatura e desinverte a polaridade do peltier quando temperatura for 36.5
+void retorna (void)          // fun√ß√£o que monitora temperatura e desinverte a polaridade do peltier quando temperatura for 36.5
 {
      while(valor<112)
 	{
@@ -108,7 +108,7 @@ void retorna (void)          // funÁ„o que monitora temperatura e desinverte a p
      __delay_us(5);
      TRISC5=0;
 }     
-/*void referencia (void)     // funÁ„o para referenciar capacitor de bootstrap do transistor superior
+/*void referencia (void)     // fun√ß√£o para referenciar capacitor de bootstrap do transistor superior
 {
 if (TRISC4==1){
 	TRISC5=0;
@@ -119,7 +119,7 @@ if (TRISC5==1){
 }
 
 }*/
-void controle_estabiliza (void)     // funÁ„o para estabilizar temperatura em set-point
+void controle_estabiliza (void)     // fun√ß√£o para estabilizar temperatura em set-point
 {
 	converte();
 //	manda_temperatura(valor);
