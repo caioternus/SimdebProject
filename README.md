@@ -9,6 +9,8 @@
 - The hardware recreates the temperature variations as occured into the pulmonary artery catheter during the procedure of thermodilution. The hardware system uses a device known as thermoelectric module, and this component is controlled by an embedded system containing a microcontroller chip (with a firmware code written in Assembly language by the author) along with other electronic circuits and elements;
 
 - Therefore, the software prototypes were developed in two programming languages: C++ and Assembly (see the file "Simdeb_assembly.txt");
+  
+- The files "Simdeb software.jpg" and "Simdeb software 2.jpg" show the front-end graphical user interface software before and after the cardiac output simulation;
 
 - Published article in Springer Nature (scientific journal): de Abreu, C.F.T., de Abreu, B.T. The Concept and Building of a Simulation Device to Check the Cardiac Output Measurement Through the Pulmonary Artery Catheter. Biomedical Materials & Devices 2, 968–1001 (2024). https://doi.org/10.1007/s44174-023-00130-8
 - Project galery on Flickr: https://www.flickr.com/photos/151496653@N08/
