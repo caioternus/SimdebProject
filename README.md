@@ -33,3 +33,12 @@
 
 ![Pulmonary artery catheterism](https://github.com/user-attachments/assets/1976fe81-32b5-49c6-bd22-a83a218938e3)
 
+![PA catheter thermistor tip 3](https://github.com/user-attachments/assets/cdaf9338-390e-447b-81ca-9aa5f22aa4d3)
+
+![Injectate port at Swan-Ganz catheter](https://github.com/user-attachments/assets/467d7573-7a6e-4177-8a99-c3ccff6dd6f2)
+
+![Thermoelectric module](https://github.com/user-attachments/assets/55560f1d-b096-401e-8dfe-fe8383c5c10f)
+
+![Table 1 (Computation Constants)](https://github.com/user-attachments/assets/f44f0395-cce8-427c-a7fe-01a90538504a)
+
+![Table 2 (Simdeb prototype vs commercial simulators)](https://github.com/user-attachments/assets/5e2ffde9-c59e-4670-b9d6-1347aa776398)
