@@ -14,3 +14,14 @@
 
 - Published article in Springer Nature (scientific journal): de Abreu, C.F.T., de Abreu, B.T. The Concept and Building of a Simulation Device to Check the Cardiac Output Measurement Through the Pulmonary Artery Catheter. Biomedical Materials & Devices 2, 968–1001 (2024). https://doi.org/10.1007/s44174-023-00130-8
 - Project galery on Flickr: https://www.flickr.com/photos/151496653@N08/
+
+![Simdeb hardware](https://github.com/user-attachments/assets/9644849f-1ea8-4f04-88c8-c3a2fe47fe6a)
+
+![Simdeb software](https://github.com/user-attachments/assets/fb1691d5-3dbb-4b35-9ee6-6aa48c1f9788)
+
+![Simdeb software 2](https://github.com/user-attachments/assets/487ddc5f-ecd0-47f6-9d2c-8090072f3f83)
+
+![Simdeb prototype vs CO monitor](https://github.com/user-attachments/assets/4ed9eac3-96b5-4124-82cb-5764505fd465)
+
+![Project results](https://github.com/user-attachments/assets/a968b900-6957-486c-a166-9bc8ec375f8d)
+
