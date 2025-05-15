@@ -21,7 +21,15 @@
 
 ![Simdeb software 2](https://github.com/user-attachments/assets/487ddc5f-ecd0-47f6-9d2c-8090072f3f83)
 
+![Project diagram](https://github.com/user-attachments/assets/fd7c566b-c7f4-462c-a478-d2b9bf2d9edc)
+
 ![Simdeb prototype vs CO monitor](https://github.com/user-attachments/assets/4ed9eac3-96b5-4124-82cb-5764505fd465)
 
 ![Project results](https://github.com/user-attachments/assets/a968b900-6957-486c-a166-9bc8ec375f8d)
+
+![Swan-Ganz catheter](https://github.com/user-attachments/assets/fa7d33b3-c839-4878-b4b6-a3485f937e6f)
+
+![Anatomy of the Pulmonary Artery Catheter](https://github.com/user-attachments/assets/49ec445e-a7f0-4812-97b1-fe70d69cbe2f)
+
+![Pulmonary artery catheterism](https://github.com/user-attachments/assets/1976fe81-32b5-49c6-bd22-a83a218938e3)
 
