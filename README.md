@@ -13,6 +13,7 @@
 - The files "Simdeb software.jpg" and "Simdeb software 2.jpg" show the front-end graphical user interface software before and after the cardiac output simulation;
 
 - Published article in Springer Nature (scientific journal): de Abreu, C.F.T., de Abreu, B.T. The Concept and Building of a Simulation Device to Check the Cardiac Output Measurement Through the Pulmonary Artery Catheter. Biomedical Materials & Devices 2, 968–1001 (2024). https://doi.org/10.1007/s44174-023-00130-8
+
 - Project galery on Flickr: https://www.flickr.com/photos/151496653@N08/
 
 ![Simdeb hardware](https://github.com/user-attachments/assets/9644849f-1ea8-4f04-88c8-c3a2fe47fe6a)
